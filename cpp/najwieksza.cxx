@@ -47,8 +47,8 @@ int main(int argc, char **argv)
 	cin>>c;
 
 	if (a > b && a > c) cout<<a;
-	if (b > a && b > c) cout<<b;
-	if (c > a && c > b) cout<<c;
+	else if(b > a && b > c) cout<<b;
+	else if (c > a && c > b) cout<<c;
 	return 0;
 }
 

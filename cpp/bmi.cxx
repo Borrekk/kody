@@ -1,5 +1,5 @@
 /*
- * .cxx
+ * bmi.cxx
  * 
  * Copyright 2020  <>
  * 
@@ -25,27 +25,44 @@
 #include <iostream>
 
 using namespace std;
+
 int main(int argc, char **argv)
 {
-	float a;
-	float b;
-	float c;
-	a= 0;
-	b = 0;
-	c = 0;
-	cout<<"Podaj pierwszy bok trójkąta: ";
-	cin>> a;
-	cout<<"Podaj drugi bok trójkąta: ";
-	cin>> b;
-	cout<<"Podaj trzeci bok trójkąta: ";
-	cin>> c;
-	if(a+b>c && a+c>b && b+c>a){
-		cout<<"Da sie";
-		}else{
-			cout<<"Nie da sie";
-			}
+	float waga; 
+	float wzrost;
+	float bmi;
 	
-
+	wzrost = 0;
+	waga = 0;
+	bmi =  0;
+	
+	
+	
+	
+	 
+	cout <<"Podaj swoją wagę(kg)";
+	cin>>waga;
+	
+	cout<<"Podaj swój wzrost(cm)";
+	cin>>wzrost;
+	
+	wzrost = wzrost/100; 
+	
+	bmi = waga/(wzrost*wzrost);
+	 
+	 
+	cout<<bmi ;
+	
+	if (bmi < 18.49) 
+		cout<<" Masz niedowage";
+    else if (bmi >= 18.5 and bmi < 24.99) 
+		cout<<" Twoje Bmi jest w normie";
+    else if (bmi >= 25 and bmi < 29.9) 
+		cout<<" Masz Nadwage";
+    else if (bmi>= 30 and bmi<50)  
+		cout<<" Jestes Otyly";
+	
+	 
 	return 0;
 }
 
