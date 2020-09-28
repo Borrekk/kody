@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	cout<<"Podaj liczbe punktów ucznia: ";
 	cin>>w;
 	
-	if (w <0 and w > 60) 
+	if (w <0 or w > 60) 
 		cout<<" Błedne dane";
     else if (w < 20) 
 		cout<<" Podstawowa";

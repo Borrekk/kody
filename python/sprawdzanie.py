@@ -26,15 +26,16 @@
 def main(args):
     
     w = int(input("Podaj liczbe punktów ucznia: "))
-    
-    if w < 0 and w > 60:
-        print("Błedne dane")
+
+    if w<0 or w > 60:
+        print("Błędne dane")
     elif w < 20:
         print("Podstawowa")
     elif w >= 20 and w <= 40:
         print("sredniozaawansowana")
-    else:
-        print("zaawansowana")
+    elif w < 0 and w > 60:
+        print("Błedne dane")
+            
     
     
     
